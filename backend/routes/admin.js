@@ -109,8 +109,8 @@ const User = require("../models/userdata");
 const router = express.Router();
 
 router.get("/defaulters/:month", async (req, res) => {
-    const cors = require("cors");
-    app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+   
+    
     try {
         const { month } = req.params;
 
