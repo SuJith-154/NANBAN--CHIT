@@ -37,16 +37,14 @@ A web application to manage and track chit fund payments made by users each mont
    cd chit-fund-tracker/backend
 
 
-###API ENDPOINTS
+User Routes:
+  - POST /signup – Register a new user
+  - POST /login – Login as user or admin
+  - GET /user/payments/:uid – Get monthly payment history
 
-User Routes
- -POST /signup – Register a new user
- -POST /login – Login as user or admin
- -GET /user/payments/:uid – Get monthly payment history
-
-Admin Routes
- -GET /defaulters/:month – Get list of defaulters and total collection
- -GET /allusers – Get all usernames
+Admin Routes:
+  - GET /defaulters/:month – Get list of defaulters and total collection
+  - GET /allusers – Get all usernames
 
 
 
