@@ -49,8 +49,7 @@ GET /defaulters/:month – Get list of defaulters and total collection
 GET /allusers – Get all usernames
 
 
-👨‍💻 Developer
-Made with passion by Sujith Senthilraj
+
 
 ![Screenshot 2025-04-19 114006](https://github.com/user-attachments/assets/3a35ec29-dbf9-4254-9d47-738cf46f224a)
 ![Screenshot 2025-04-19 113955](https://github.com/user-attachments/assets/56488869-b57f-4a38-a0bd-6028824e1344)
@@ -58,6 +57,9 @@ Made with passion by Sujith Senthilraj
 ![Screenshot 2025-04-19 113944](https://github.com/user-attachments/assets/4a2b5040-9dbe-4368-8a5f-1abe3a243b39)
 
 
+
+👨‍💻 Developer
+Made with passion by Sujith Senthilraj
 
 
 
