@@ -40,11 +40,13 @@ A web application to manage and track chit fund payments made by users each mont
 User Routes:
   - POST /signup – Register a new user
   - POST /login – Login as user or admin
-  - GET /user/payments/:uid – Get monthly payment history
+  - POST /user/username/Pay - pay for that user / register payment for the user
+  - GET /user/username/paid– Get monthly payment history
 
 Admin Routes:
   - GET /defaulters/:month – Get list of defaulters and total collection
   - GET /allusers – Get all usernames
+  - POST /sendmail - To Make a Remainder for due
 
 
 
