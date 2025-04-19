@@ -58,7 +58,7 @@ Admin Routes:
 
 
 
-👨‍💻 Developer
+👨‍💻 
 Made with passion by Sujith Senthilraj
 
 
