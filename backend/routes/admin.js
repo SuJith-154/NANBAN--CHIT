@@ -187,8 +187,8 @@ router.post("/sendmail", async (req, res) => {
       host: 'smtp.gmail.com',
       port: 465,
       auth: {
-        user: 'sujipjk03@gmail.com',
-        pass: 'uhkb wujp ztxi qgtw' // be careful, consider using environment variables
+        user: '',
+        pass: '' // be careful, consider using environment variables
       }
     });
 
