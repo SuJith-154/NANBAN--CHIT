@@ -43,13 +43,13 @@ export default function UserPage() {
     setLoading(true);
     try {
       const res = await axios.post(`${API_BASE}/${name}/pay`, {
-        month,
+        month:month.toLowerCase(),
         amount: Number(amount),
         T_ID: txnId
       });
 
       if (res.data.success) {
-        alert(res.data.message || '✅ Payment recorded successfully');
+        alert(res.data.message || 'Payment recorded successfully');
         fetchPayments();
         setMonth('');
         setAmount('');
@@ -68,6 +68,7 @@ export default function UserPage() {
   const fetchPayments = async () => {
     try {
       const res = await axios.get(`${API_BASE}/${name}/paid`);
+      console.log("API Response:", res.data);
       setPaymentData(res.data.payments || {});
     } catch (err) {
       console.error('Error fetching payments:', err);
@@ -78,7 +79,7 @@ export default function UserPage() {
     if (name) fetchPayments();
   }, [name]);
 
-  // Split the months into two columns
+
   const firstColumnMonths = months.slice(0, Math.ceil(months.length / 2));
   const secondColumnMonths = months.slice(Math.ceil(months.length / 2));
   const year = new Date().getFullYear(); 
@@ -149,7 +150,7 @@ export default function UserPage() {
                 {/* First Column */}
                 <Grid item xs={12} md={6}>
                   {firstColumnMonths.map((m) => {
-                    const monthData = paymentData[m] || { status: 'not paid' };
+                    const monthData = paymentData[m.toLowerCase()] || { status: 'not paid' };
                     const isPaid = monthData.status === 'paid';
                     return (
                       <Box
@@ -175,10 +176,9 @@ export default function UserPage() {
                   })}
                 </Grid>
 
-                {/* Second Column */}
                 <Grid item xs={12} md={6}>
                   {secondColumnMonths.map((m) => {
-                    const monthData = paymentData[m] || { status: 'not paid' };
+                    const monthData = paymentData[m.toLowerCase()] || { status: 'not paid' };
                     const isPaid = monthData.status === 'paid';
                     return (
                       <Box

@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
-const con = "mongodb+srv://ERSUJITH:SUJITH@chitfund-pjk.wf5fg.mongodb.net/?retryWrites=true&w=majority&appName=chitfund-pjk";
+const con = "mongodb://localhost:27017/";
 const connectDB = async () => {
     try {
         await mongoose.connect(con, {
