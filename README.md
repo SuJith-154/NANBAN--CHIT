@@ -33,7 +33,7 @@ A web application to manage and track chit fund payments made by users each mont
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/chit-fund-tracker.git
+   git clone https://github.com/SuJith-154//chit-fund-tracker.git
    cd chit-fund-tracker/backend
 
 
